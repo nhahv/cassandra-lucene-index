@@ -1,0 +1,3 @@
+[submodule "vietnamese_analyzer/VnCoreNLP"]
+	path = vietnamese_analyzer/VnCoreNLP
+	url = https://github.com/vncorenlp/VnCoreNLP.git
