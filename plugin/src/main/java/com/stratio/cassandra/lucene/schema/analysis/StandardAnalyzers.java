@@ -54,6 +54,7 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.sv.SwedishAnalyzer;
 import org.apache.lucene.analysis.th.ThaiAnalyzer;
 import org.apache.lucene.analysis.tr.TurkishAnalyzer;
+import org.apache.lucene.analysis.vi.VietnameseAnalyzer;
 
 import java.util.Locale;
 
@@ -347,6 +348,13 @@ public enum StandardAnalyzers {
         @Override
         protected Analyzer build() {
             return new ThaiAnalyzer();
+        }
+    },
+
+    VIETNAMESE {
+        @Override
+        protected Analyzer build() {
+            return new VietnameseAnalyzer();
         }
     };
 

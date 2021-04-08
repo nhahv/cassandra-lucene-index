@@ -37,6 +37,7 @@
     <description>Cassandra Lucene index</description>
 
     <modules>
+        <module>vietnamese_analyzer</module>
         <module>builder</module>
         <module>plugin</module>
         <module>dist</module>
@@ -75,7 +76,9 @@
     </developers>
 
     <properties>
-        <archive.apache.url>http://archive.apache.org/dist/cassandra/${cassandra.version}/apache-cassandra-${cassandra.version}-bin.tar.gz</archive.apache.url>
+        <archive.apache.url>
+            http://archive.apache.org/dist/cassandra/${cassandra.version}/apache-cassandra-${cassandra.version}-bin.tar.gz
+        </archive.apache.url>
         <cassandra.version>3.0.14</cassandra.version>
         <coverage.data.dir>${project.build.outputDirectory}</coverage.data.dir>
         <jackson.version>2.8.4</jackson.version>
